@@ -1,11 +1,12 @@
 import React from 'react';
 
+import TextLink from './pages/TextLink/text-link-page';
+// import VideoListen from './pages/VideoListen/video-listen';
+
+import './app.css';
+
 function App() {
-  return (
-    <div className="App">
-      <h1>Meu app muito louco</h1>
-    </div>
-  );
+  return <TextLink />;
 }
 
 export default App;

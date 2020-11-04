@@ -1,0 +1,93 @@
+.text-link-page {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #f0f0f7;
+}
+
+.text-link-page main {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 40px;
+}
+
+.text-link-page .input-block {
+  margin: 40px;
+}
+
+.text-link-page .input-block h2 {
+  color: #b2b2b2;
+
+  font-size: 28px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.text-link-page .input-block textarea {
+  width: 500px;
+  height: 500px;
+
+  resize: none;
+
+  font-size: 26px;
+  padding: 10px;
+
+  border-radius: 14px;
+  border: 3px solid #c0c0c0;
+  outline: none;
+}
+
+.text-link-page footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 1120px;
+}
+
+.text-link-page footer .link-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-link-page footer .link-container label {
+  color: #b2b2b2;
+  font-size: 30px;
+
+  margin-bottom: 10px;
+}
+
+.text-link-page footer .link-container input {
+  width: 300px;
+  height: 35px;
+
+  border: 3px solid #c0c0c0;
+  border-radius: 8px;
+  font-size: 16px;
+
+  padding-left: 10px;
+}
+
+.text-link-page footer .button-container button {
+  width: 200px;
+  height: 45px;
+
+  border-radius: 8px;
+  cursor: pointer;
+  background: #fff;
+  border: 3px solid #c0c0c0;
+  color: #000;
+
+  font-size: 18px;
+  font-weight: bold;
+  outline: none;
+
+  margin-top: 40px;
+}
