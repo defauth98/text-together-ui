@@ -36,7 +36,7 @@ function VideoListenPage() {
           opts={{ height: '600px', width: '1200px' }}
         />
       </div>
-      <NextButton to="/" />
+      <NextButton to="/line-by-line" />
     </div>
   );
 }

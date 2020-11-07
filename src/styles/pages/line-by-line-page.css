@@ -1,0 +1,32 @@
+#line-by-line-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#line-by-line-page h1 {
+  margin: 40px 0;
+  font-weight: normal;
+}
+
+#line-by-line-page .texts-container {
+  width: 60%;
+  text-align: left;
+}
+
+#line-by-line-page .texts-container .setence-block {
+  margin: 20px 0;
+}
+
+#line-by-line-page p {
+  margin: 5px;
+
+  font-size: 22px;
+
+  color: #000;
+}
+
+#line-by-line-page p.english-setence {
+  color: #05c3ff;
+}
