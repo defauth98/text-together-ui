@@ -1,10 +1,14 @@
 import React from 'react';
 
-import './text-link.css';
+import NextButton from '../components/NextButton';
+import { useVideoContext } from '../contexts/videoContext';
+import '../styles/pages/text-link-page.css';
 
 function TextLink() {
+  const { setTextEnglish, setTextPortuguese, setVideoLink } = useVideoContext();
+
   return (
-    <div className="text-link-page">
+    <div id="text-link-page">
       <main>
         <div className="input-block">
           <h2>English</h2>
@@ -13,6 +17,7 @@ function TextLink() {
             id="text-english"
             cols={30}
             rows={30}
+            onChange={(event) => setTextEnglish(event.target.value)}
           ></textarea>
         </div>
 
@@ -23,6 +28,7 @@ function TextLink() {
             id="text-portuguese"
             cols={30}
             rows={30}
+            onChange={(event) => setTextPortuguese(event.target.value)}
           ></textarea>
         </div>
       </main>
@@ -30,11 +36,12 @@ function TextLink() {
       <footer>
         <div className="link-container">
           <label htmlFor="link-input">Link</label>
-          <input type="text" />
+          <input
+            type="text"
+            onChange={(event) => setVideoLink(event.target.value)}
+          />
         </div>
-        <div className="button-container">
-          <button>Next</button>
-        </div>
+        <NextButton to="video-listen" />
       </footer>
     </div>
   );

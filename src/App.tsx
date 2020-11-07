@@ -1,12 +1,17 @@
 import React from 'react';
 
-import TextLink from './pages/TextLink/text-link-page';
-// import VideoListen from './pages/VideoListen/video-listen';
+import Routes from './routes';
+import { VideoContextProvider } from './contexts/videoContext';
+import 'dotenv/config';
 
 import './app.css';
 
 function App() {
-  return <TextLink />;
+  return (
+    <VideoContextProvider>
+      <Routes />
+    </VideoContextProvider>
+  );
 }
 
 export default App;
