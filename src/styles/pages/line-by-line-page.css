@@ -16,7 +16,7 @@
 }
 
 #line-by-line-page .texts-container .setence-block {
-  margin: 20px 0;
+  margin: 40px 0;
 }
 
 #line-by-line-page p {
@@ -29,4 +29,45 @@
 
 #line-by-line-page p.english-setence {
   color: #05c3ff;
+}
+
+#line-by-line-page .buttons-container {
+  display: flex;
+
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 100%;
+
+  margin-bottom: 50px;
+  margin-top: 0px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+#line-by-line-page .buttons-container .button-container {
+  margin-top: 0;
+}
+
+#line-by-line-page .buttons-container button {
+  /* height: 8px; */
+  width: 200px;
+
+  border-radius: 8px;
+  cursor: pointer;
+  background: #fff;
+  border: 3px solid #c0c0c0;
+  color: #000;
+
+  font-size: 18px;
+  font-weight: bold;
+  outline: none;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  padding: 13px 0;
 }

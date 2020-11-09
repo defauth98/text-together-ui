@@ -4,6 +4,8 @@ import { useVideoContext } from '../contexts/videoContext';
 
 import '../styles/pages/line-by-line-page.css';
 
+import NextButton from '../components/NextButton';
+
 function LineByLinePage() {
   const [englishSentecesArray, setEnglishSentecesArray] = useState<string[]>(
     []
@@ -17,10 +19,11 @@ function LineByLinePage() {
 
   useEffect(() => {
     const englishSetences = textEnglish && getOnlySetences(textEnglish);
-    const portuguseSetences = textPortuguese && getOnlySetences(textPortuguese);
+    const portugueseSetences =
+      textPortuguese && getOnlySetences(textPortuguese);
 
     englishSetences && setEnglishSentecesArray(englishSetences);
-    portuguseSetences && setPortuguseSentecesArray(portuguseSetences);
+    portugueseSetences && setPortuguseSentecesArray(portugueseSetences);
 
     joinSentences();
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -44,6 +47,12 @@ function LineByLinePage() {
       ];
     }
 
+    console.log({
+      setencesArray,
+      englishSentecesArray,
+      portugueseSentecesArray,
+    });
+
     setJoinedSetencesArray(setencesArray);
   }
 
@@ -54,7 +63,7 @@ function LineByLinePage() {
       <div className="texts-container">
         {joinedSetencesArray?.map((setences, index) => {
           return (
-            <div className="setence-block">
+            <div className="setence-block" key={index}>
               <p key={index} className="english-setence">
                 {setences[0]}
               </p>
@@ -62,6 +71,25 @@ function LineByLinePage() {
             </div>
           );
         })}
+        <div className="buttons-container">
+          <button
+            onClick={() => {
+              const englishSetences =
+                textEnglish && getOnlySetences(textEnglish);
+              const portugueseSetences =
+                textPortuguese && getOnlySetences(textPortuguese);
+
+              englishSetences && setEnglishSentecesArray(englishSetences);
+              portugueseSetences &&
+                setPortuguseSentecesArray(portugueseSetences);
+
+              joinSentences();
+            }}
+          >
+            Refresh
+          </button>
+          <NextButton to="video-listen" />
+        </div>
       </div>
     </div>
   );
