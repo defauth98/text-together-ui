@@ -1,0 +1,38 @@
+#only-video-listen-page {
+  width: 100vw;
+  height: 100vh;
+
+  background: #f0f0f7;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#only-video-listen-page h1 {
+  margin: 40px 0;
+
+  font-weight: 400;
+}
+
+#only-video-listen-page .video-container {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#only-video-listen-page .checkbox-wrapper {
+  display: flex;
+  margin-top: 20px;
+}
+
+#only-video-listen-page .checkbox-wrapper .checkbox-container {
+  margin: 5px;
+}
+
+#only-video-listen-page .checkbox-wrapper .checkbox-container input {
+  width: 40px;
+  height: 40px;
+}
