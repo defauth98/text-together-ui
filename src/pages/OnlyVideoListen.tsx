@@ -8,7 +8,7 @@ import '../styles/pages/only-video-listen-page.css';
 import 'dotenv/config';
 import { useVideoContext } from '../contexts/videoContext';
 
-function VideoListenPage() {
+function OnlyVideoListenPage() {
   const { videoTitle, videoID } = useVideoContext();
 
   return (
@@ -38,9 +38,9 @@ function VideoListenPage() {
           <input type="checkbox" id="checkbox-1" />
         </div>
       </div>
-      <NextButton to="/line-by-line" />
+      <NextButton to="/finish-page" />
     </div>
   );
 }
 
-export default VideoListenPage;
+export default OnlyVideoListenPage;

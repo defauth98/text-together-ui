@@ -6,6 +6,7 @@ import VideoListen from './pages/VideoListenPage';
 import LineByLine from './pages/LineByLinePage';
 import VideoListenWithText from './pages/VideoListenWithText';
 import OnlyVideoListen from './pages/OnlyVideoListen';
+import FinishPage from './pages/FinishPage';
 
 function Routes() {
   return (
@@ -15,6 +16,7 @@ function Routes() {
       <Route path="/line-by-line" component={LineByLine} />
       <Route path="/listen-with-text" component={VideoListenWithText} />
       <Route path="/only-video-listen" component={OnlyVideoListen} />
+      <Route path="/finish-page" component={FinishPage} />
     </BrowserRouter>
   );
 }
