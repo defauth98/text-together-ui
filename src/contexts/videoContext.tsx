@@ -40,6 +40,44 @@ export const VideoContextProvider: React.FC = ({ children }) => {
     if (videoID) getVideoTitle();
   }, [videoID]);
 
+  useEffect(() => {
+    if (textEnglish.split('\n')[0].substr(0, 1) === '1') {
+      const allLines = textEnglish.split('\n');
+
+      const filteredLines = allLines.filter((line) => {
+        if (line.trim().length === 0) {
+          return false;
+        }
+        return true;
+      });
+
+      const withoutNumbersAndLineStart = filteredLines.map((line) =>
+        line.slice(4, line.length).trim()
+      );
+
+      setTextEnglish(withoutNumbersAndLineStart.toString());
+    }
+  }, [textEnglish]);
+
+  useEffect(() => {
+    if (textPortuguese.split('\n')[0].substr(0, 1) === '1') {
+      const allLines = textPortuguese.split('\n');
+
+      const filteredLines = allLines.filter((line) => {
+        if (line.trim().length === 0) {
+          return false;
+        }
+        return true;
+      });
+
+      const withoutNumbersAndLineStart = filteredLines.map((line) =>
+        line.slice(4, line.length).trim()
+      );
+
+      setTextPortuguese(withoutNumbersAndLineStart.toString());
+    }
+  }, [textPortuguese]);
+
   return (
     <VideoContext.Provider
       value={

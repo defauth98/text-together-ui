@@ -1,0 +1,44 @@
+#video-listen-with-text {
+  width: 100vw;
+  height: 100vh;
+}
+
+#video-listen-with-text .text-video-container {
+  display: flex;
+}
+
+#video-listen-with-text .text-video-container .text-container {
+  width: 1000px;
+
+  text-align: justify;
+}
+
+#video-listen-with-text .text-video-container .text-container h1 {
+  margin-bottom: 30px;
+}
+
+#video-listen-with-text .text-video-container .text-container p {
+  font-size: 20px;
+}
+
+#video-listen-with-text .text-video-container .video-container {
+  margin-left: 200px;
+  margin-top: 80px;
+}
+
+#video-listen-with-text {
+  margin: 50px;
+}
+
+#video-listen-with-text .checkbox-wrapper {
+  display: flex;
+}
+
+#video-listen-with-text .checkbox-wrapper .checkbox-container {
+  margin: 5px;
+}
+
+#video-listen-with-text .checkbox-wrapper .checkbox-container input {
+  width: 40px;
+  height: 40px;
+}

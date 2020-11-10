@@ -88,7 +88,7 @@ function LineByLinePage() {
           >
             Refresh
           </button>
-          <NextButton to="video-listen" />
+          <NextButton to="listen-with-text" />
         </div>
       </div>
     </div>
