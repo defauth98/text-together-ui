@@ -12,6 +12,10 @@
   </a>
 </p>
 
+## Link para acessar
+
+[Clique aqui para acessar o site](https://text-together.netlify.app/)
+
 ## Como instalar
 
 ```sh
