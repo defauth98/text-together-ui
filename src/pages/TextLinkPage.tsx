@@ -4,11 +4,26 @@ import NextButton from '../components/NextButton';
 import { useVideoContext } from '../contexts/videoContext';
 import '../styles/pages/text-link-page.css';
 
+import { Helmet} from 'react-helmet'
+
 function TextLink() {
   const { setTextEnglish, setTextPortuguese, setVideoLink } = useVideoContext();
 
   return (
     <div id="text-link-page">
+      <Helmet>
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://text-together.netlify.app/"/>
+      <meta property="og:title" content="js title"/>
+      <meta property="og:description" content="js description"/>
+      <meta property="og:image" content="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"/>
+      <meta property="twitter:card" content="summary_large_image"/>
+      <meta property="twitter:url" content="https://text-together.netlify.app/"/>
+      <meta property="twitter:title" content="js title"/>
+      <meta property="twitter:description" content="js description"/>
+      <meta property="twitter:image" content="https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg"/>
+      </Helmet>
+
       <main>
         <div className="input-block">
           <h2>English</h2>
